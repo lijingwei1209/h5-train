@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+
+.wrapper{
+    width: 80%;
+    min-width: 1000px;
+    height: 830px;
+    margin: 0 auto;
+    border: 1px solid #e7e7e7;
+    box-shadow:3px 0 2px #999;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+}
+
+.navTop{
+    top: 0;
+    background: #efefef;
+    height: 100px;
+}
+
+.navTitle{
+    line-height: 100px;
+    font-size: 70px;
+    background-color: #BEBEBE;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 350px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #777;
+    font-size: 20px;
+}
+
+.navBottom li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.navBottom li>a.active, .navBottom li>a:hover{
+    border-bottom: 2px solid #CC0000;
+}
+
+
+.left{
+    float: left;
+    width: 160px;
+    height: 600px;
+    background-color: #efefef;
+}
+
+.leftTitle{
+    background-color: #BEBEBE;
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.center{
+    float: left;
+    height: 600px;
+    padding: 0 15px;
+}
+
+.right{
+    float: right;
+    width: 180px;
+    height: 600px;
+    background-color: #efefef;
+}
+
+.foot{
+    float: left;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #B6B6B6;
+    text-align: center;
+}
+
+.h4Form{
+    float: left;
+    padding: 15px;
+}
+
+.h5Form{
+    float: right;
+    padding: 15px;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.form-group label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.form-group input[type=text],input[type=password],select,textarea{
+    margin-left: 20px;
+    width: 150px;
+}
+
+.form-group input[type=radio],input[type=checkbox]{
+    margin-left: 20px;
+}

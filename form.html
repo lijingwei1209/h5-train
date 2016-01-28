@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<h3>h4表单：</h3>
+<form>
+    姓名：<input type="text" />
+    密码：<input type="password" /><br/>
+    性别：<input type="radio" name="sex" value="boy"/>男<input type="radio" name="sex" value="girl"/>女<br/>
+    爱好：<input type="checkbox" name="interest" value="sing"/>唱歌
+    <input type="checkbox" name="interest" value="sport"/>运动
+    <input type="checkbox" name="interest" value="draw"/>画画<br/>
+    国籍：<select>
+    <option>中国</option>
+    <option>美国</option>
+    <option>俄罗斯</option>
+</select><br/>
+    评价：<textarea rows="3" cols="50"></textarea><br/>
+    <button type="submit">提交1</button><input type="button" value="提交2">
+</form>
+
+<h3>h5表单：</h3>
+<form>
+    email：<input type="email"/><br/>
+    num: <input type="number" min="1" max="5" /><br/>
+    Date: <input type="date" /><br/>
+    range:<input type="range" min="1" max="10" /><br/>
+    datalist：<input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist><br/>
+    账号：<input type="text" id="name" autofocus placeholder="请输入账号"><br/>
+    <input type="button" onclick="saveName()" value="保存"/>
+    <input type="button" onclick="readName()" value="读取"/>
+</form>
+
+
+</body>
+
+
+
+<script>
+    function saveName(){
+        var name = document.getElementById("name").value;
+        localStorage.setItem("name",name);
+    }
+    function readName(){
+        var name = localStorage.getItem("name");
+        document.getElementById("name").value = name;
+    }
+</script>
+</html>

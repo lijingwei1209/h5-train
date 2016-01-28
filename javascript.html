@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript用法</title>
+</head>
+<body>
+    <p id="p" onclick="testJS()">测试javascript</p>
+</body>
+
+<script src="jquery.min.js"></script>
+<script>
+    function  testJS(){
+        var p = $("#p");
+        p.html("修改后的文本");
+        p.css("color","green");
+        if(confirm("你确定要修改p的样式吗？")){
+        }else {
+            p.html("测试javascript");
+            p.css("color","black");
+        }
+    }
+</script>
+<!--<script>-->
+    <!--function  testJS(){-->
+        <!--var p = document.getElementById("p");-->
+        <!--p.innerHTML = "修改后的文本";-->
+        <!--p.style.color = "green";-->
+        <!--if(confirm("你确定要修改p的样式吗？")){-->
+        <!--}else {-->
+            <!--p.innerHTML = "测试javascript";-->
+            <!--p.style.color = "black";-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+</html>
