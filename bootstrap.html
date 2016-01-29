@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"/>
+    <link rel="stylesheet" href="public/reset.css">
+    <link rel="stylesheet" href="public/bootstrap-3.3.6/css/bootstrap.min.css">
+    <script src="public/jquery-2.2.0.min.js"></script>
+    <script src="public/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <title>bootstrap</title>
+    <style>
+        #myCarousel{
+            height: 300px;
+        }
+        #myCarousel img{
+            margin: 0 auto;
+            height: 300px;
+        }
+        .carousel-control{
+            font-size: 50px;
+            padding-top: 7%;
+        }
+
+        .col-xs-4 img{
+            width: 100px;
+            height: 100px;
+        }
+
+
+        section{margin: 20px auto}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bootstrap</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active"><img alt="" src="public/img/i1.jpg" />
+                    <div class="carousel-caption">
+                        <h4>小狗</h4>
+                        <p>小狗很可爱</p>
+                    </div>
+                </div>
+
+                <div class="item"><img alt="" src="public/img/i2.jpg" />
+                    <div class="carousel-caption" >
+                        <h4>小猫</h4>
+                        <p>小猫很可爱</p>
+                    </div>
+                </div>
+
+                <div class="item"><img alt="" src="public/img/i3.jpg" />
+                    <div class="carousel-caption">
+                        <h4>小猫</h4>
+                        <p>小猫很可爱</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel">&lsaquo;</a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel">&rsaquo;</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>产品</th>
+                <th>交付时间</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>TB - Monthly</td>
+                <td>01/04/2012</td>
+                <td>Default</td>
+            </tr>
+            <tr class="success">
+                <td>1</td>
+                <td>TB - Monthly</td>
+                <td>01/04/2012</td>
+                <td>Approved</td>
+            </tr>
+            <tr class="error">
+                <td>2</td>
+                <td>TB - Monthly</td>
+                <td>02/04/2012</td>
+                <td>Declined</td>
+            </tr>
+            <tr class="warning">
+                <td>3</td>
+                <td>TB - Monthly</td>
+                <td>03/04/2012</td>
+                <td>Pending</td>
+            </tr>
+            <tr class="info">
+                <td>4</td>
+                <td>TB - Monthly</td>
+                <td>04/04/2012</td>
+                <td>Call in to confirm</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="username" class="col-xs-3 control-label">用户名</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="username"
+                           placeholder="请输入用户名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pw" class="col-xs-3 control-label">密码</label>
+                <div class="col-xs-9">
+                    <input type="password" class="form-control" id="pw"
+                           placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-9">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 请记住我
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-9">
+                    <button type="submit" class="btn btn-default">登录</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <!-- 标准的按钮 -->
+        <button type="button" class="btn btn-default">默认按钮</button>
+
+        <!-- 提供额外的视觉效果，标识一组按钮中的原始动作 -->
+        <button type="button" class="btn btn-primary">原始按钮</button>
+
+        <!-- 表示一个成功的或积极的动作 -->
+        <button type="button" class="btn btn-success">成功按钮</button>
+
+        <!-- 信息警告消息的上下文按钮 -->
+        <button type="button" class="btn btn-info">信息按钮</button>
+
+        <!-- 表示应谨慎采取的动作 -->
+        <button type="button" class="btn btn-warning">警告按钮</button>
+
+        <!-- 表示一个危险的或潜在的负面动作 -->
+        <button type="button" class="btn btn-danger">危险按钮</button>
+
+        <!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
+        <button type="button" class="btn btn-link">链接按钮</button>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+            <div class="col-xs-4">
+                <img src="public/img/i1.jpg" class="img-rounded">
+            </div>
+            <div class="col-xs-4">
+                <img src="public/img/i2.jpg" class="img-circle">
+            </div>
+            <div class="col-xs-4">
+                <img src="public/img/i3.jpg" class="img-thumbnail">
+            </div>
+    </div>
+</section>
+
+</body>
+</html>
